@@ -1,0 +1,1 @@
+wget http://soft.vpser.net/lnmp/lnmp1.9.tar.gz -cO lnmp1.9.tar.gz && tar zxf lnmp1.9.tar.gz && cd lnmp1.9 && LNMP_Auto="y" DBSelect="4" Bin="n" DB_Root_Password="super-forum" InstallInnodb="y" PHPSelect="11" SelectMalloc="1" ./install.sh lnmp

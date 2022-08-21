@@ -22,7 +22,7 @@ sed -i 's/disable_functions =.*/disable_functions =/g' /usr/local/php/etc/php.in
 echo "swoole.use_shortname = 'Off'" >>  /usr/local/php/etc/php.ini
 
 # composer 换源
-yes y | composer config -g repos.packagist composer https://mirrors.tencent.com/composer/
+yes y | composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 
 # 卸载nginx
 /etc/init.d/nginx stop

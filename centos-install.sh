@@ -24,3 +24,7 @@ echo "swoole.use_shortname = 'Off'" >>  /usr/local/php/etc/php.ini
 # composer 换源
 yes y | composer config -g repos.packagist composer https://mirrors.tencent.com/composer/
 
+# 卸载nginx
+/etc/init.d/nginx stop
+rm -rf /usr/local/nginx
+rm -f /etc/init.d/nginx
